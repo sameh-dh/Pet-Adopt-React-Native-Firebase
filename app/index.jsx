@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text style={{fontFamily: 'Outfit-Bold',}} > Hola! you can do it girl !!!</Text>
+      <Text style={{fontFamily: 'Outfit',}} > Hola! you can do it girl !!!</Text>
     </View>
   );
 }

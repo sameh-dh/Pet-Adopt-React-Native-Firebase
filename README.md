@@ -31,10 +31,10 @@ now to use fonts :
 --> go to _layout.jsx :
 
 import {useFonts} from "expo-font"
- useFonts({
-    'outfit':require('./../assets/fonts/Outfit-Regular.ttf'),
-    'outfitMedium':require('./../assets/fonts/Outfit-Medium.ttf'),
-    'outfitBold':require('./../assets/fonts/Outfit-Bold.ttf'),
+  useFonts({
+    'Outfit':require('./../assets/fonts/Outfit-Regular.ttf'),
+    'Outfit-Medium':require('./../assets/fonts/Outfit-Medium.ttf'),
+    'Outfit-Bold':require('./../assets/fonts/Outfit-Bold.ttf'),
   })
   --> go to index.jsx :
 <View>
@@ -43,5 +43,30 @@ import {useFonts} from "expo-font"
       
     
 ```
+### STEP 3 : React Native Authentication 
 
+```js
+--> create login folder inside app folder
+ -->   
+```
+#  Project structure
+```js
+♕♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♔
+♙                                              ♙
+♙--- app ------ _Layout.jsx                    ♙
+♙|          |                                  ♙
+♙|          --- index.jsx                      ♙
+♙|          |                                  ♙
+♙|          --- Login                          ♙
+♙|          |                                  ♙
+♙|          --- Signup                         ♙
+♙|                                             ♙
+♙|                                             ♙
+♙--- assets                                    ♙
+♙|                                             ♙
+♙|                                             ♙
+♙--- components                                ♙
+♙                                              ♙
+♖♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♘
+```
 cntrl + shift + v
