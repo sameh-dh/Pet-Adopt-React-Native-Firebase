@@ -4,12 +4,13 @@ export default function Index() {
   return (
     <View
       style={{
+       
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <Text> Hola! </Text>
+      <Text style={{fontFamily: 'Outfit-Bold',}} > Hola! you can do it girl !!!</Text>
     </View>
   );
 }
