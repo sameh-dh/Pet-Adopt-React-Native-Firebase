@@ -47,27 +47,26 @@ import {useFonts} from "expo-font"
 
 ```js
 --> create login folder inside app folder
- -->   
+--> create a navigation link and make sure you can navigate between home and Login Screen 
+--->
 ```
 #  Project structure
 ```js
-                                                                        
-                                                                             
-    --- app ------ _Layout.jsx                                               
-    |          |                                                             
-    |          --- index.jsx                                                 
-    |          |                                                             
-    |          --- Login                                                     
-    |          |                                                             
-    |          --- Signup                                                    
-    |                                                                        
-    |                                                                        
-    --- assets                                                               
-    |                                                                        
-    |                                                                        
-    --- components                                                           
-                                                                         
-
+                            
+ --- app ------ _Layout.jsx                       
+ |          |                                     
+ |          --- index.jsx                             
+ |          |                                       
+ |          --- Login                          
+ |          |                                         
+ |          --- Signup                                                    
+ |                                               
+ |                                       
+ --- assets                               
+ |                                      
+ |                                                                       
+ --- components                                  
+            
 
 ```
 cntrl + shift + v

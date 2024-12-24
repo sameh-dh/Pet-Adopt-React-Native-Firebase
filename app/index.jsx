@@ -1,5 +1,5 @@
-import { Text, View } from "react-native";
-
+import { Pressable,Text, View } from "react-native";
+import {Link} from "expo-router"
 export default function Index() {
   return (
     <View
@@ -10,7 +10,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text style={{fontFamily: 'Outfit',}} > Hola! you can do it girl !!!</Text>
+     <Link href={'/login'}>
+      <Text> Go to login Screen</Text>
+     </Link>
     </View>
   );
 }
