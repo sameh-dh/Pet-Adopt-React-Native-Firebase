@@ -51,31 +51,23 @@ import {useFonts} from "expo-font"
 ```
 #  Project structure
 ```js
+                                                                        
+                                                                             
+    --- app ------ _Layout.jsx                                               
+    |          |                                                             
+    |          --- index.jsx                                                 
+    |          |                                                             
+    |          --- Login                                                     
+    |          |                                                             
+    |          --- Signup                                                    
+    |                                                                        
+    |                                                                        
+    --- assets                                                               
+    |                                                                        
+    |                                                                        
+    --- components                                                           
+                                                                         
 
-♕♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♔
-♙                                                                             ♙
-♙                                                                             ♙
-♙                                                                             ♙
-♙                                                                             ♙
-♙    --- app ------ _Layout.jsx                                               ♙
-♙    |          |                                                             ♙
-♙    |          --- index.jsx                                                 ♙
-♙    |          |                                                             ♙
-♙    |          --- Login                                                     ♙
-♙    |          |                                                             ♙
-♙    |          --- Signup                                                    ♙
-♙    |                                                                        ♙
-♙    |                                                                        ♙
-♙    --- assets                                                               ♙
-♙    |                                                                        ♙
-♙    |                                                                        ♙
-♙    --- components                                                           ♙
-♙                                                                             ♙
-♙                                                                             ♙
-♙                                                                             ♙
-♙                                                                             ♙
-♙                                                                             ♙
-♖♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♙♘
 
 ```
 cntrl + shift + v
