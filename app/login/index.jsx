@@ -11,9 +11,10 @@ export default function LogInScreen() {
       }}
       />
       <View style={{padding:20,display:'flex',alignItems:'center'}}>
-        <Text style={{fontFamily:'Outfit-Bold',fontSize:30}}>
+        <Text style={{fontFamily:'Outfit-Bold',fontSize:30,textAlign:'center'}}>
             Ready to make new freind ?
         </Text>
+        <Text style={{fontFamily:"Outfit", fontSize:18 ,textAlign:"center"}}>Let's adopt the pet wish you like and make there life happy again</Text>
       </View>
     </View>
   )

@@ -66,7 +66,9 @@ import {useFonts} from "expo-font"
  |                                      
  |                                                                       
  --- components                                  
-            
+ |
+ |
+ --- constants           
 
 ```
 cntrl + shift + v
