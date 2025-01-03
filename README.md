@@ -48,7 +48,9 @@ import {useFonts} from "expo-font"
 ```js
 --> create login folder inside app folder
 --> create a navigation link and make sure you can navigate between home and Login Screen 
---->
+--> Design the log in screen
+---> GOOGLE authentication
+---> use clerk authentication
 ```
 #  Project structure
 ```js
