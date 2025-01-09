@@ -50,7 +50,17 @@ import {useFonts} from "expo-font"
 --> create a navigation link and make sure you can navigate between home and Login Screen 
 --> Design the log in screen
 ---> GOOGLE authentication
----> use clerk authentication
+---> use authentication using Clerk "https://clerk.com/" ( go to product then click user Authentication / create an account // crate app // choose expo )
+
+    ---> create .env file
+    ---> Install dependencies
+```
+```bash
+npm i react-native-web @expo/metro-runtime
+npm install @clerk/clerk-expo
+npm install expo-secure-store
+
+
 ```
 #  Project structure
 ```js

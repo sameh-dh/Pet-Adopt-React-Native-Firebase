@@ -3,12 +3,12 @@ import React from "react";
 import Colors from "../../constants/colors.js";
 export default function LogInScreen() {
   return (
-    <View style={{backgroundColor:Colors.WHITE , height:"100%"}}>
+    <View style={{ backgroundColor: Colors.WHITE, height: "100%" }}>
       <Image
         source={require("./../../assets/images/login.png")}
         style={{
           width: "100%",
-          height: "500",
+          height: "60%",
         }}
       />
       <View style={{ padding: 20, display: "flex", alignItems: "center" }}>
