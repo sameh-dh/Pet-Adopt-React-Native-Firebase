@@ -2,31 +2,9 @@ import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import { Slot } from 'expo-router'
 import { ClerkProvider, ClerkLoaded } from '@clerk/clerk-expo'
-import * as SecureStore from 'expo-secure-store'
+import { tokenCache } from './login/cache.js'
 
 
-const createTokenCache =  TokenCache => {
-  return {
-    getToken: async () => {
-      try {
-        const item = await SecureStore.getItemAsync(key)
-        if (item) {
-          console.log(`${key} was used 🔐 \n`)
-        } else {
-          console.log('No values stored under key: ' + key)
-        }
-        return item
-      } catch (error) {
-        console.error('secure store get item error: ', error)
-        await SecureStore.deleteItemAsync(key)
-        return null
-      }
-    },
-    saveToken: (key, token) => {
-      return SecureStore.setItemAsync(key, token)
-    },
-  }
-}
 
 export default function RootLayout() {
 
@@ -41,7 +19,7 @@ export default function RootLayout() {
     <ClerkProvider publishableKey={publishableKey}>
  
     <Stack>
-      <Stack.Screen name="index" />
+      <Stack.Screen tokenCache={tokenCache} name="index" />
       <Stack.Screen name="login/index" options={{ headerShown: false }} />
     </Stack>
       

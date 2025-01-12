@@ -68,12 +68,14 @@ import {useFonts} from "expo-font"
 
     ---> create .env file
     ---> Install dependencies and follow the documentation
+    ---> unstead of adding a form auth we will use google authentication with Oauth this is the link to documentation: ('https://clerk.com/docs/custom-flows/oauth-connections')  and remember to select expo in Create the sign-up and sign-in flow
+    ---> Go to clerk dashboard of your app go to  User & Authentication > Attack Protection and turn off the Bot sign-up protection if you have this error : Missing CAPTCHA token
 ```
 ```bash
 npm i react-native-web @expo/metro-runtime
 npm install @clerk/clerk-expo
 npm install expo-secure-store
-
+npm install expo-linking
 
 ```
 #  Project structure 💖
