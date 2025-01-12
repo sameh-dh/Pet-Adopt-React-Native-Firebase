@@ -9,14 +9,15 @@ I created this project to deepen my understanding of React Native through hands-
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-<h2>[Set up project 🤗](#project-Set-up-bash-commands)</h2>
-<h2>[How to add font in your react native app 😪](#How-to-add-font-in-your-react-native-app)</h2>
-<h2>[React Native Authentication using clerk 🤨](#React-Native-Authentication)</h2>
-<h2>[About Clerk 🙂](#About-Clerk)</h2>
-<h2>[Project structure 💖](#Project-structure)</h2>
-<!-- <h2>[Set up project](#project-Set-up-bash-commands)</h2> -->
+### [Set up project 🤗](#project-Set-up-bash-commands)
+### [How to add font in your react native app 😪](#How-to-add-font-in-your-react-native-app)
+### [React Native Authentication using clerk 🤨](#React-Native-Authentication)
+### [About Clerk 🙂](#About-Clerk)
+### [Project structure 💖](#Project-structure)
 
-## project Set-up bash commands
+
+
+## project Set-up bash commands 🤗
 
 ```bash
 
@@ -30,7 +31,7 @@ npm run reset-project
   the first step is to create app folder and _layout.jsx and index.jsx files and return any text
 
 ```
-### STEP 2 : How to add font in your react native app
+### STEP 2 : How to add font in your react native app 😪
 
 ```js
 Modify Fonts 
@@ -56,7 +57,7 @@ import {useFonts} from "expo-font"
       
     
 ```
-### STEP 3 : React Native Authentication 
+### STEP 3 : React Native Authentication 🤨
 
 ```js
 --> create login folder inside app folder
@@ -75,7 +76,7 @@ npm install expo-secure-store
 
 
 ```
-#  Project structure
+#  Project structure 💖
 ```js
                             
  ├── app ───├── _Layout.jsx                       
@@ -97,7 +98,7 @@ npm install expo-secure-store
 ```
 cntrl + shift + v
 
-# About Clerk 
+# About Clerk 🙂
 
  <p><b>Clerk</b> is an authentication and user management platform designed to integrate seamlessly into modern web and mobile applications. It provides tools for implementing features like user authentication, authorization, session management, and profile handling. Clerk supports various authentication methods, including:
 
