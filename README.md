@@ -123,7 +123,7 @@ Passwordless Options: Includes magic links, social logins, and one-time password
 <li>Scalability</li>
 Handles User Management at Scale: No need to worry about building and maintaining databases for user accounts. Clerk can scale as your app grows.
 Global Infrastructure: Optimized for global use, ensuring fast and reliable authentication.
-<li>5. Time-Saving Features</li>
+<li>Time-Saving Features</li>
 Built-In User Profiles: Clerk handles user profiles, preferences, and account settings.
 Session Management: Automatically manages user sessions, token expiration, and refresh tokens.
 <li>Integration with Third-Party Services</li>
