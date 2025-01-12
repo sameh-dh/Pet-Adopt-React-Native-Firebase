@@ -111,30 +111,25 @@ It offers pre-built UI components and SDKs for frameworks like React, Next.js, a
 <h2> Advantages of using Clerk</h2>
 <p>
 <ul>
-<li>1. Faster Development </li>
+<li> Faster Development </li>
 Pre-built UI Components: Clerk provides ready-made components for login, signup, and profile management, saving time and effort in designing and coding these features from scratch.
 SDK Integration: Easily integrates with modern frameworks like React, Next.js, and others, reducing boilerplate code.
-<li>2. Enhanced Security</li>
+<li> Enhanced Security</li>
 Out-of-the-box Security Features: Clerk includes advanced security measures like rate limiting, encryption, and protection against common vulnerabilities (e.g., SQL injection, XSS).
 Regular Updates: Authentication standards evolve, and Clerk handles updates to stay compliant with best practices, ensuring your app remains secure.
-<li>3. Support for Modern Authentication</li>
+<li> Support for Modern Authentication</li>
 Multi-Factor Authentication (MFA): Easy to enable MFA for added security.
 Passwordless Options: Includes magic links, social logins, and one-time passwords, which are user-friendly and secure.
-<li>4. Scalability</li>
+<li>Scalability</li>
 Handles User Management at Scale: No need to worry about building and maintaining databases for user accounts. Clerk can scale as your app grows.
 Global Infrastructure: Optimized for global use, ensuring fast and reliable authentication.
 <li>5. Time-Saving Features</li>
 Built-In User Profiles: Clerk handles user profiles, preferences, and account settings.
 Session Management: Automatically manages user sessions, token expiration, and refresh tokens.
-<li>6. Integration with Third-Party Services</li>
+<li>Integration with Third-Party Services</li>
 Social Logins: Easy integration with providers like Google, GitHub, and more.
 APIs for Custom Logic: Clerk's APIs allow you to customize authentication workflows if needed.
-<li>7. Reduced Maintenance</li>
-No Custom Backend Required: Clerk takes care of backend logic for authentication and user management.
-Automatic Compliance: Clerk ensures compliance with regulations like GDPR and CCPA, reducing legal and technical overhead.
-<li>8. Developer-Friendly</li>
-Documentation: Excellent documentation and examples make it easy to get started.
-Community Support: Growing community and support for troubleshooting.
+
 </ul>
 </p>
 
