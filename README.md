@@ -4,9 +4,9 @@
 <p>
 I created this project to deepen my understanding of React Native through hands-on implementation. Along the way, I documented key concepts and insights that I believe will serve as a valuable reference when revisiting this project. Detailed documentation is crucial for navigating older projects effectively, so take your time, stay focused, and don't get discouraged!
 </p>
-
+<hr></hr>
 <h3>💙 Enjoy this journey into the world of React Native! 💙</h3>
-
+<hr></hr>
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 #### 1. [Set up project 🤗](#project-Set-up-bash-commands)
