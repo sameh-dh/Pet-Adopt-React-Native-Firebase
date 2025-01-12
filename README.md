@@ -9,11 +9,11 @@ I created this project to deepen my understanding of React Native through hands-
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-### [Set up project 🤗](#project-Set-up-bash-commands)
-### [How to add font in your react native app 😪](#How-to-add-font-in-your-react-native-app)
-### [React Native Authentication using clerk 🤨](#React-Native-Authentication)
-### [About Clerk 🙂](#About-Clerk)
-### [Project structure 💖](#Project-structure)
+#### 1. [Set up project 🤗](#project-Set-up-bash-commands)
+#### 2. [How to add font in your react native app 😪](#How-to-add-font-in-your-react-native-app)
+#### 3. [React Native Authentication using clerk 🤨](#React-Native-Authentication)
+#### 4. [About Clerk 🙂](#About-Clerk)
+#### 5. [Project structure 💖](#Project-structure)
 
 
 
