@@ -1,16 +1,20 @@
 
-# Hello everyone 
+# Hello everyone 🌸 
 
 <p>
 I created this project to deepen my understanding of React Native through hands-on implementation. Along the way, I documented key concepts and insights that I believe will serve as a valuable reference when revisiting this project. Detailed documentation is crucial for navigating older projects effectively, so take your time, stay focused, and don't get discouraged!
 </p>
 
-<h3>Enjoy this journey into the world of React Native!</h3>
+<h3>Enjoy this journey into the world of React Native! 💙</h3>
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-[About Clerk](#About-Clerk)
-[Set up project](#project-Set-up-bash-commands)
+<h2>[Set up project 🤗](#project-Set-up-bash-commands)</h2>
+<h2>[How to add font in your react native app 😪](#How-to-add-font-in-your-react-native-app)</h2>
+<h2>[React Native Authentication using clerk 🤨](#React-Native-Authentication)</h2>
+<h2>[About Clerk 🙂](#About-Clerk)</h2>
+<h2>[Project structure 💖](#Project-structure)</h2>
+<!-- <h2>[Set up project](#project-Set-up-bash-commands)</h2> -->
 
 ## project Set-up bash commands
 
@@ -74,22 +78,22 @@ npm install expo-secure-store
 #  Project structure
 ```js
                             
- --- app ------ _Layout.jsx                       
- |          |                                     
- |          --- index.jsx                             
- |          |                                       
- |          --- Login                          
- |          |                                         
- |          --- Signup                                                    
- |                                               
- |                                       
- --- assets                               
- |                                      
- |                                                                       
- --- components                                  
- |
- |
- --- constants           
+ ├── app ───├── _Layout.jsx                       
+ │          │                                     
+ │          ├── index.jsx                             
+ │          │                                       
+ │          ├── Login                          
+ │          │                                         
+ │          ├──Signup                                                    
+ │                                               
+ │                                       
+ ├──assets                               
+ │                                      
+ │                                                                       
+ ├──components                                  
+ │
+ │
+ ├──constants           
 ```
 cntrl + shift + v
 
