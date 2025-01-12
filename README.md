@@ -64,10 +64,10 @@ import {useFonts} from "expo-font"
 --> create a navigation link and make sure you can navigate between home and Login Screen 
 --> Design the log in screen
 ---> GOOGLE authentication
----> use authentication using Clerk "https://clerk.com/" ( go to product then click user Authentication / create an account // crate app // choose expo )
+---> use authentication using Clerk "https://clerk.com/" ( go to product in the tab bar then click user Authentication / create an account // crate app // choose expo )
 
     ---> create .env file
-    ---> Install dependencies
+    ---> Install dependencies and follow the documentation
 ```
 ```bash
 npm i react-native-web @expo/metro-runtime
