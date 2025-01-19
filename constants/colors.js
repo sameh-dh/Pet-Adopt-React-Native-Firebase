@@ -1,4 +1,6 @@
 export default{
     PRIMARY :'#E8B20E' ,
-    GRAY :"8F8e8d"
+    GRAY :"8F8e8d",
+    PINK : "pink",
+    WHITE : "#fff"
 }

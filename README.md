@@ -1,9 +1,23 @@
-# Pet-Adopt-React-Native-Firebase
 
+# Hello everyone 🌸 
+
+<p>
+I created this project to deepen my understanding of React Native through hands-on implementation. Along the way, I documented key concepts and insights that I believe will serve as a valuable reference when revisiting this project. Detailed documentation is crucial for navigating older projects effectively, so take your time, stay focused, and don't get discouraged!
+</p>
+<hr></hr>
+<h3>💙 Enjoy this journey into the world of React Native! 💙</h3>
+<hr></hr>
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+#### 1. [Set up project 🤗](#project-Set-up-bash-commands)
+#### 2. [How to add font in your react native app 😪](#How-to-add-font-in-your-react-native-app)
+#### 3. [React Native Authentication using clerk 🤨](#React-Native-Authentication)
+#### 4. [About Clerk 🙂](#About-Clerk)
+#### 5. [Project structure 💖](#Project-structure)
 
-## project Set-up bash commands
+
+
+## project Set-up bash commands 🤗
 
 ```bash
 
@@ -17,7 +31,7 @@ npm run reset-project
   the first step is to create app folder and _layout.jsx and index.jsx files and return any text
 
 ```
-### STEP 2 : How to add font in your react native app
+### STEP 2 : How to add font in your react native app 😪
 
 ```js
 Modify Fonts 
@@ -43,32 +57,120 @@ import {useFonts} from "expo-font"
       
     
 ```
-### STEP 3 : React Native Authentication 
+### STEP 3 : React Native Authentication 🤨
 
 ```js
 --> create login folder inside app folder
 --> create a navigation link and make sure you can navigate between home and Login Screen 
---->
+--> Design the log in screen
+---> GOOGLE authentication
+---> use authentication using Clerk "https://clerk.com/" ( go to product in the tab bar then click user Authentication / create an account // crate app // choose expo )
+
+    ---> create .env file
+    ---> Install dependencies and follow the documentation
+    ---> unstead of adding a form auth we will use google authentication with Oauth this is the link to documentation: ('https://clerk.com/docs/custom-flows/oauth-connections')  and remember to select expo in Create the sign-up and sign-in flow
+    ---> Go to clerk dashboard of your app go to  User & Authentication > Attack Protection and turn off the Bot sign-up protection if you have this error : Missing CAPTCHA token
+
+some questions that can come to your mind : 
+
+// what is expo-web-browser : is a module provided by the Expo framework for React Native applications. It enables developers to interact with the device's web browser in a secure and user-friendly way.
+
+ /* Why is expo-web-browser used in authentication?
+Authentication workflows often involve redirecting users to a web-based authentication provider, such as Google, Facebook, or a custom OAuth2 server. This is where expo-web-browser comes into play. */
+
 ```
-#  Project structure
+```bash
+npm i react-native-web @expo/metro-runtime
+npm install @clerk/clerk-expo
+npm install expo-secure-store
+npm install expo-linking
+
+```
+#  Project structure 💖
 ```js
                             
- --- app ------ _Layout.jsx                       
- |          |                                     
- |          --- index.jsx                             
- |          |                                       
- |          --- Login                          
- |          |                                         
- |          --- Signup                                                    
- |                                               
- |                                       
- --- assets                               
- |                                      
- |                                                                       
- --- components                                  
- |
- |
- --- constants           
+ ├── app ───├── _Layout.jsx                       
+ │          │                                     
+ │          ├── index.jsx                             
+ │          │                                       
+ │          ├── Login ├── cache.js                      
+                      ├── index.jsx
+            │        
+            ├── home.jsx                                 
+ │          ├──Signup                                                    
+ │                                               
+ │                                       
+ ├──assets                               
+ │                                      
+ │                                                                   
+ ├──components                                  
+ │
+ │
+ ├──constants 
 
 ```
 cntrl + shift + v
+
+# About Clerk 🙂
+
+ <p><b>Clerk</b> is an authentication and user management platform designed to integrate seamlessly into modern web and mobile applications. It provides tools for implementing features like user authentication, authorization, session management, and profile handling. Clerk supports various authentication methods, including:
+
+Email and password
+Social logins (Google, Facebook, GitHub, etc.)
+Magic links
+One-time passwords (OTP)
+Passwordless authentication 
+It offers pre-built UI components and SDKs for frameworks like React, Next.js, and more, simplifying the integration process for developers.</p>
+<h2> Advantages of using Clerk</h2>
+<p>
+<ul>
+<li> Faster Development </li>
+Pre-built UI Components: Clerk provides ready-made components for login, signup, and profile management, saving time and effort in designing and coding these features from scratch.
+SDK Integration: Easily integrates with modern frameworks like React, Next.js, and others, reducing boilerplate code.
+<li> Enhanced Security</li>
+Out-of-the-box Security Features: Clerk includes advanced security measures like rate limiting, encryption, and protection against common vulnerabilities (e.g., SQL injection, XSS).
+Regular Updates: Authentication standards evolve, and Clerk handles updates to stay compliant with best practices, ensuring your app remains secure.
+<li> Support for Modern Authentication</li>
+Multi-Factor Authentication (MFA): Easy to enable MFA for added security.
+Passwordless Options: Includes magic links, social logins, and one-time passwords, which are user-friendly and secure.
+<li>Scalability</li>
+Handles User Management at Scale: No need to worry about building and maintaining databases for user accounts. Clerk can scale as your app grows.
+Global Infrastructure: Optimized for global use, ensuring fast and reliable authentication.
+<li>Time-Saving Features</li>
+Built-In User Profiles: Clerk handles user profiles, preferences, and account settings.
+Session Management: Automatically manages user sessions, token expiration, and refresh tokens.
+<li>Integration with Third-Party Services</li>
+Social Logins: Easy integration with providers like Google, GitHub, and more.
+APIs for Custom Logic: Clerk's APIs allow you to customize authentication workflows if needed.
+
+</ul>
+</p>
+
+<h2> Disadvantages of Using Clerk </h2>
+While Clerk offers many advantages, there are some potential drawbacks to consider:
+<ul>
+
+
+<li>If Clerk experiences downtime, your app's authentication system may also fail unless you have fallback mechanisms.</li>
+<li>You're relying on their pricing model, and significant cost increases could affect your budget.
+Limited Customization</li>
+
+<li>Pre-built components may not fit your exact design or user experience requirements without additional effort.
+Customizing advanced authentication flows might be more challenging compared to building them from scratch.
+Cost</li>
+
+<li>Clerk is a paid service, so it might not be ideal for small projects or startups with limited budgets. While they have a free tier, it might not meet the needs of larger-scale applications.
+Vendor Lock-In</li>
+
+<li>If you rely heavily on Clerk and decide to switch to another service or build your own system later, migrating users and data can be complex.
+Limited Offline Functionality</li>
+
+<li>Applications that need offline authentication or functionality may find Clerk less suitable since it relies on external servers for most processes.</li>
+
+
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>If you need a quick, secure, and scalable solution, Clerk is a great choice. However, if you want complete control over your authentication system and don’t mind the extra work, building it yourself might be more suitable.</p>
+
