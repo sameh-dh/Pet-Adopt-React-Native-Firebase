@@ -1,7 +1,8 @@
- import React from "react";
+ import React from "react"
  import * as WebBrowser from 'expo-web-browser'
  import { useOAuth } from '@clerk/clerk-expo'
  import * as Linking from 'expo-linking'
+import { View } from 'react-native-web'
  
  
  export const useWarmUpBrowser = () => {
@@ -36,3 +37,9 @@
       console.error(JSON.stringify(err, null, 2))
     }
   }, [])
+
+  export default Auth = () =>{
+    return (
+      <View></View>
+    )
+  }
