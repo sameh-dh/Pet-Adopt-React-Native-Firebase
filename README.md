@@ -70,6 +70,14 @@ import {useFonts} from "expo-font"
     ---> Install dependencies and follow the documentation
     ---> unstead of adding a form auth we will use google authentication with Oauth this is the link to documentation: ('https://clerk.com/docs/custom-flows/oauth-connections')  and remember to select expo in Create the sign-up and sign-in flow
     ---> Go to clerk dashboard of your app go to  User & Authentication > Attack Protection and turn off the Bot sign-up protection if you have this error : Missing CAPTCHA token
+
+some questions that can come to your mind : 
+
+// what is expo-web-browser : is a module provided by the Expo framework for React Native applications. It enables developers to interact with the device's web browser in a secure and user-friendly way.
+
+ /* Why is expo-web-browser used in authentication?
+Authentication workflows often involve redirecting users to a web-based authentication provider, such as Google, Facebook, or a custom OAuth2 server. This is where expo-web-browser comes into play. */
+
 ```
 ```bash
 npm i react-native-web @expo/metro-runtime
@@ -85,18 +93,21 @@ npm install expo-linking
  │          │                                     
  │          ├── index.jsx                             
  │          │                                       
- │          ├── Login                          
- │          │                                         
+ │          ├── Login ├── cache.js                      
+                      ├── index.jsx
+            │        
+            ├── home.jsx                                 
  │          ├──Signup                                                    
  │                                               
  │                                       
  ├──assets                               
  │                                      
- │                                                                       
+ │                                                                   
  ├──components                                  
  │
  │
- ├──constants           
+ ├──constants 
+
 ```
 cntrl + shift + v
 
