@@ -1,5 +1,7 @@
 import Colors from "../../constants/colors.js";
-
+import { View, Text } from 'react-native'
+import React from 'react'
+import {StyleSheet} from 'react-native';
 
 export const customStyle = StyleSheet.create({
     MainView :{backgroundColor: Colors.WHITE, height: "100%"},
@@ -35,3 +37,17 @@ export const customStyle = StyleSheet.create({
   }
 
  })
+
+
+
+
+ 
+ const style = () => {
+   return (
+     <View>
+       <Text>style</Text>
+     </View>
+   )
+ }
+ 
+ export default style
