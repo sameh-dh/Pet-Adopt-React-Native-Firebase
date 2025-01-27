@@ -1,11 +1,22 @@
 import { Pressable,Text, View } from "react-native";
 import {Link, Redirect} from "expo-router"
-import { useUser } from "@clerk/clerk-expo";
+import { useUser , useAuth, SignedIn} from "@clerk/clerk-expo";
+import { useEffect } from "react";
 export default function Index() {
+ 
+  const { isLoaded, isSignedIn, user } = useUser()
+  const {  userId, sessionId } = useAuth()
 
-  const {user} = useUser();
-  console.log(user)
-  return(
+  useEffect(() => {
+    console.log("user", user?.firstName)
+    console.log("user only", user)
+    console.log(isLoaded)
+    console.log(userId)
+
+   });
+   console.log(useUser())
+  
+  return  (
     <View
       style={{
        
@@ -14,7 +25,10 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-    {user ? <Redirect href={'/(tabs)/login'} /> : <Redirect href={'/login'} />}
+      <Link href='./login'>  go home </Link>
+    {/* {user  && isSignedIn ? <Redirect href={'/(tabs)/home'} /> : <Redirect href={'/login'} />} */}
+    {/* {user ? <Redirect href={'/(tabs)/login'} /> : <Redirect href={'/login'} />} */}
+
     </View>
   );
 }

@@ -27,14 +27,15 @@ export default function LogInScreen() {
    // if you want to use facebook just change oauth_google to oauth_facebook
   const { startOAuthFlow } = useOAuth({ strategy: 'oauth_google' })
 const onPress = React.useCallback(async () => {
+  
     try {
       const { createdSessionId, signIn, signUp, setActive } = await startOAuthFlow({
         redirectUrl: Linking.createURL('/(tabs)/home', { scheme: 'myapp' }),
       })
-
+     console.log()
       // If sign in was successful, set the active session
-      if (createdSessionId) {
-        
+      if (createdSessionId) { 
+        setActive({ session: createdSessionId })
       } else {
         // Use signIn or signUp returned from startOAuthFlow
         // for next steps, such as MFA
