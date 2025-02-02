@@ -7,14 +7,12 @@ export default function Index() {
   const { isLoaded, isSignedIn, user } = useUser()
   const {  userId, sessionId } = useAuth()
 
-  useEffect(() => {
-    console.log("user", user?.firstName)
-    console.log("user only", user)
-    console.log(isLoaded)
-    console.log(userId)
+  // useEffect(() => {
+  //   console.log("user", user?.firstName)
+    
 
-   });
-   console.log(useUser())
+  //  });
+  // //  console.log(useUser())
   
   return  (
     <View
@@ -25,9 +23,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Link href='./login'>  go home </Link>
+      {/* <Link href='./login'>  go home </Link> */}
     {/* {user  && isSignedIn ? <Redirect href={'/(tabs)/home'} /> : <Redirect href={'/login'} />} */}
-    {/* {user ? <Redirect href={'/(tabs)/login'} /> : <Redirect href={'/login'} />} */}
+    {user ? <Redirect href={'/(tabs)/home'} /> : <Redirect href={'/login'} />}
 
     </View>
   );

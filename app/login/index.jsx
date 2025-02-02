@@ -1,14 +1,14 @@
 import { Image, View, Text, Pressable } from "react-native";
-import React from "react";
+import {useEffect , useCallback} from "react";
 // import Colors from "../../constants/colors.js";
 import * as WebBrowser from 'expo-web-browser'
-import { useOAuth } from '@clerk/clerk-expo'
+import { useOAuth, useSSO } from '@clerk/clerk-expo'
 import * as Linking from 'expo-linking';
 import { customStyle } from "./style";
 import { ClerkProvider, ClerkLoaded } from '@clerk/clerk-expo'
 
 export const useWarmUpBrowser = () => {
-   React.useEffect(() => {
+   useEffect(() => {
      // Warm up the android browser to improve UX
      // https://docs.expo.dev/guides/authentication/#improving-user-experience
      void WebBrowser.warmUpAsync()
@@ -26,19 +26,19 @@ export default function LogInScreen() {
   useWarmUpBrowser()
    // if you want to use facebook just change oauth_google to oauth_facebook
   const { startOAuthFlow } = useOAuth({ strategy: 'oauth_google' })
-const onPress = React.useCallback(async () => {
+const onPress = useCallback(async () => {
   
     try {
       const { createdSessionId, signIn, signUp, setActive } = await startOAuthFlow({
         redirectUrl: Linking.createURL('/(tabs)/home', { scheme: 'myapp' }),
       })
-     console.log()
       // If sign in was successful, set the active session
       if (createdSessionId) { 
         setActive({ session: createdSessionId })
       } else {
         // Use signIn or signUp returned from startOAuthFlow
         // for next steps, such as MFA
+        console.log("i'm here")
       }
     } catch (err) {
       // See https://clerk.com/docs/custom-flows/error-handling
@@ -66,7 +66,7 @@ const onPress = React.useCallback(async () => {
         >
           Let's adopt the pet wish you like and make there life happy again
         </Text>
-        <Pressable onPress={onPress}
+        <Pressable onPress={() =>onPress()}
           style={customStyle.GetstartedPressable}
         >
           <Text
